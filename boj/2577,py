@@ -1,0 +1,12 @@
+n = []
+for i in range(3):
+    t = input()
+    n.append(t)
+s = int(n[0]) * int(n[1]) * int(n[2])
+p = list(str(s))
+for i in range(10):
+    cnt = 0
+    for j in range(len(str(s))):
+        if i == int(p[j]):
+            cnt += 1
+    print(cnt)
